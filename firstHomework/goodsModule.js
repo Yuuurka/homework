@@ -112,4 +112,4 @@ const str4 = "name-contains-fd&price-<=70000&quantity->=5"
 // console.log(selection(str1, arrGoods))
 // console.log(selection(str2, arrGoods))
 // console.log(selection(str3, arrGoods))
-console.log(selection(str4, arrGoods))
+// console.log(selection(str4, arrGoods))

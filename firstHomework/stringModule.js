@@ -96,4 +96,4 @@ function countUniqueWords(someString){
     return quickSort(arrUniqueWords).reverse()
 }
 
-console.log(countUniqueWords("Текст, в котором слово текст несколько раз встречается и слово тоже"))
+// console.log(countUniqueWords("Текст, в котором слово текст несколько раз встречается и слово тоже"))
