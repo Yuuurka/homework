@@ -45,11 +45,11 @@ function selection(searchString, arrGoods){
     for (let goods of arrGoods){
         let condition1 = true
         if (nameParam === "starts") {
-            condition1 = goods.name.slice(0, nameValue.length) === nameValue
+            condition1 = goods.name.startsWith(nameValue)
         }else if (nameParam === "contains"){
             condition1 = goods.name.includes(nameValue)
         }else if (nameParam === "ends"){
-            condition1 = goods.name.slice(-nameValue.length, goods.name.length) === nameValue
+            condition1 = goods.name.endsWith(nameValue)
         }
 
         let condition2 = true
@@ -80,11 +80,11 @@ function selection(searchString, arrGoods){
 
         let condition4 = true
         if (descriptionParam === "starts") {
-            condition4 = goods.description.slice(0, descriptionValue.length-1) === descriptionValue
+            condition4 = goods.description.startsWith(descriptionValue)
         }else if (descriptionParam === "contains"){
             condition4 = goods.description.includes(descriptionValue)
         }else if (descriptionParam === "ends"){
-            condition4 = goods.description.slice(-descriptionValue.length, goods.description.length) === descriptionValue
+            condition4 = goods.description.endsWith(descriptionValue)
         }
 
         if (condition1 && condition2 && condition3 && condition4){
